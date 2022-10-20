@@ -17,7 +17,7 @@ public class Inmueble {
         return  precioVenta;
     }
 
-    protected void imprimir(){
+    void imprimir(){
         System.out.println("Identificador inmobiliario: " + identificadorInmobiliario +
                 "\nÁrea del inmueble: " + area + "\nDirección: " + direccion +
                 "\nPrecio de venta: $" + precioVenta);
