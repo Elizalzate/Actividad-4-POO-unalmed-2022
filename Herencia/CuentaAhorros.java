@@ -14,5 +14,19 @@ public class CuentaAhorros extends  Cuenta{
             super.retirar(retiro);
         }
     }
+    protected void generarExtractoMensual() {
+        if(numeroRetiros > 4){
+           comisionMensual += (numeroRetiros - 4) * 1000;
+        }
+        super.generarExtracto();
+        if (saldo < 10000) {
+            isActiva = false;
+        }
+    }
 
+    protected void imprimir(){
+        System.out.println("Tu saldo es: $" + saldo +
+                "\nComisión mensual: $" + comisionMensual +
+                "\nNúmero de transacciones: " + numeroConsignaciones+numeroRetiros);
+    }
 }

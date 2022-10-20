@@ -1,5 +1,4 @@
 import org.json.simple.*;
-import org.json.simple.parser.JSONParser;
 
 import java.util.*;
 
@@ -12,7 +11,7 @@ public class Cuenta {
     protected int numeroConsignaciones = 0;
     protected int numeroRetiros = 0;
 
-    HashMap<String, String> data = new HashMap<String, String>();
+    HashMap<String, String> data = new HashMap<>();
 
     // constructor
     public Cuenta(float saldo, float tasaAnual){
@@ -51,7 +50,7 @@ public class Cuenta {
         data.put("Tasa anual", String.valueOf(tasaAnual));
     }
 
-    protected void consultar(){
+    protected void imprimir(){
         settearDatos();
         JSONObject json = new JSONObject(data);
         System.out.println(json);
