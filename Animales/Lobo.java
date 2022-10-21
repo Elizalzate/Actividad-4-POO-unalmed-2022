@@ -1,22 +1,21 @@
 package Animales;
 
-public class Perro extends Canido{
-
-    private void setNombreCientifico() {
-        this.nombreCientifico = "Canis lupus familiaris";
-    }
-
+public class Lobo extends Canido{
     private void setSonido() {
-        this.sonido = "Ladrido - Woff, woff";
+        this.sonido = "Aullido - auuuu";
+    }
+    private void setHabitat() {
+        this.habitat = "Bosque";
     }
 
     private void setAlimentos() {
-        this.alimentos = "Carnívoro principalmente";
+        this.alimentos = "Carne - carnívoro";
     }
 
-    private void setHabitat() {
-        this.habitat = "Doméstico";
+    private void setNombreCientifico() {
+        this.nombreCientifico = "Canis lupus";
     }
+
 
     @Override
     public String getNombreCientifico() {
@@ -44,7 +43,7 @@ public class Perro extends Canido{
 
     void imprimirInfo(){
         System.out.println("\n" + getNombreCientifico() +
-                " también conocido como Perro" +
+                " también conocido como Lobo" +
                 "\nSonido: " + getSonido()+
                 "\nSu habitat es: " + getHabitat() +
                 "\nSu alimentación está basada en: " + getAlimentos() );
