@@ -1,6 +1,6 @@
 package Animales;
 
-public class Animal implements IAnimal{
+public abstract class Animal implements IAnimal{
     protected String sonido;
     protected String alimentos;
     protected String habitat;
