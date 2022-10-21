@@ -12,3 +12,5 @@ Walter Hugo Arboleda Mazo
 
 ### Grupo:
 3 (remota)
+
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=jwenjian.visitor-badge&left_color=black&right_color=white&left_text=Lurkers)
