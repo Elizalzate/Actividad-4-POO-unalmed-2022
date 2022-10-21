@@ -13,4 +13,4 @@ Walter Hugo Arboleda Mazo
 ### Grupo:
 3 (remota)
 
-![](https://komarev.com/ghpvc/?username=elizalzate&style=plastic)
+
