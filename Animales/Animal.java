@@ -1,10 +1,10 @@
 package Animales;
 
 public abstract class Animal implements IAnimal{
-    protected String sonido;
-    protected String alimentos;
-    protected String habitat;
-    protected String nombreCientifico;
+    private String sonido;
+    private String alimentos;
+    private String habitat;
+    private String nombreCientifico;
 
     @Override
     public void setNombreCientifico(String nombre) {

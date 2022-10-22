@@ -1,45 +1,11 @@
 package Animales;
 
 public class Perro extends Canido{
-
-    private void setNombreCientifico() {
-        this.nombreCientifico = "Canis lupus familiaris";
-    }
-
-    private void setSonido() {
-        this.sonido = "Ladrido - Woff, woff";
-    }
-
-    private void setAlimentos() {
-        this.alimentos = "Carnívoro principalmente";
-    }
-
-    private void setHabitat() {
-        this.habitat = "Doméstico";
-    }
-
-    @Override
-    public String getNombreCientifico() {
-        setNombreCientifico();
-        return nombreCientifico;
-    }
-
-    @Override
-    public String getSonido() {
-        setSonido();
-        return sonido;
-    }
-
-    @Override
-    public String getAlimentos() {
-        setAlimentos();
-        return alimentos;
-    }
-
-    @Override
-    public String getHabitat() {
-        setHabitat();
-        return habitat;
+    Perro(){
+        setSonido("Ladrido - Woff, woff");
+        setHabitat("Doméstico");
+        setAlimentos("Carne - carnívoro");
+        setNombreCientifico("Canis lupus familiaris");
     }
 
     void imprimirInfo(){

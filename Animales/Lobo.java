@@ -1,44 +1,11 @@
 package Animales;
 
 public class Lobo extends Canido{
-    private void setSonido() {
-        this.sonido = "Aullido - auuuu";
-    }
-    private void setHabitat() {
-        this.habitat = "Bosque";
-    }
-
-    private void setAlimentos() {
-        this.alimentos = "Carne - carnívoro";
-    }
-
-    private void setNombreCientifico() {
-        this.nombreCientifico = "Canis lupus";
-    }
-
-
-    @Override
-    public String getNombreCientifico() {
-        setNombreCientifico();
-        return nombreCientifico;
-    }
-
-    @Override
-    public String getSonido() {
-        setSonido();
-        return sonido;
-    }
-
-    @Override
-    public String getAlimentos() {
-        setAlimentos();
-        return alimentos;
-    }
-
-    @Override
-    public String getHabitat() {
-        setHabitat();
-        return habitat;
+    Lobo(){
+        setSonido("Aullido - auuuu");
+        setHabitat("Bosque");
+        setAlimentos("Carne - carnívoro");
+        setNombreCientifico("Canis lupus");
     }
 
     void imprimirInfo(){
