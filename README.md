@@ -6,7 +6,10 @@
 |Elízabeth Alzate Zapata               |ealzatez@unal.edu.co    | elizalzate         |
 
 ## Vídeo:
-![Vídeo](https://youtu.be/A8PZsiZk4pE)
+[Vídeo](https://youtu.be/A8PZsiZk4pE)
+
+## Diagramas:
+[Diagramas]()
 
 ### Docente:
 Walter Hugo Arboleda Mazo
