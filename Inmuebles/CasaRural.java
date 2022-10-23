@@ -1,15 +1,17 @@
 package Inmuebles;
 
-public class CasaRural extends Casa{
+public class CasaRural extends Casa {
     protected static double valorArea = 1500000;
     protected double distanciaCabecera;
     protected double altitud;
+
     public CasaRural(int identificadorInmobiliario, float area, String direccion,
-              int numeroHabitaciones, int numeroBanios, int numeroPisos, int distanciaCabecera,
-              int altitud) {
+                     int numeroHabitaciones, int numeroBanios, int numeroPisos, int distanciaCabecera,
+                     int altitud) {
         super(identificadorInmobiliario, area, direccion, numeroHabitaciones, numeroBanios, numeroPisos);
         this.distanciaCabecera = distanciaCabecera;
         this.altitud = altitud;
+        calcularPrecioVenta(valorArea);
     }
 
     @Override

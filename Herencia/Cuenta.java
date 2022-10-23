@@ -1,9 +1,10 @@
-import org.json.simple.*;
+package Herencia;
+
+import org.json.simple.JSONObject;
 
 import java.util.*;
 
-public class Cuenta {
-
+public abstract class Cuenta {
     // atributos
     protected float saldo;
     protected float tasaAnual;
@@ -14,46 +15,49 @@ public class Cuenta {
     HashMap<String, String> data = new HashMap<>();
 
     // constructor
-    public Cuenta(float saldo, float tasaAnual){
+    public Cuenta(float saldo, float tasaAnual) {
         this.saldo = saldo;
-        this.tasaAnual = tasaAnual;
+        this.tasaAnual = tasaAnual / 100;
     }
 
-    protected void consignar(float consignacion){
-        numeroConsignaciones += 1;
-        saldo += consignacion;
-    }
-
-    protected void retirar(float retiro){
-        if(saldo - retiro < 0){
-            System.out.println("El saldo es insuficiente");
-        }
-        else {
-            numeroRetiros += 1;
-            saldo -= retiro;
+    protected void consignar(float consignacion) {
+        if (consignacion > 0) {
+            numeroConsignaciones += 1;
+            saldo += consignacion;
         }
     }
 
-    protected void calcularInteresMensual(){
-        saldo += saldo*(tasaAnual/12);
+    protected void retirar(float retiro) {
+        if(retiro > 0){
+            if (saldo - retiro < 0) {
+                System.out.println("El saldo es insuficiente");
+            } else if (saldo - retiro > 0) {
+                saldo -= retiro;
+                numeroRetiros += 1;
+            }
+        }
     }
 
-    protected void generarExtracto(){
+    protected void calcularInteresMensual() {
+        saldo += saldo * (tasaAnual / 12);
+    }
+
+    protected void generarExtracto() {
         saldo -= comisionMensual;
         calcularInteresMensual();
     }
-    private void settearDatos(){
+
+    private void settearDatos() {
         data.put("Saldo", String.valueOf(saldo));
         data.put("Número de consignaciones", String.valueOf(numeroConsignaciones));
         data.put("Número de retiros", String.valueOf(numeroRetiros));
         data.put("Comisión mensual", String.valueOf(comisionMensual));
-        data.put("Tasa anual", String.valueOf(tasaAnual));
+        data.put("Tasa anual", String.valueOf(tasaAnual/100));
     }
 
-    protected void imprimir(){
+    protected void imprimir() {
         settearDatos();
         JSONObject json = new JSONObject(data);
         System.out.println(json);
     }
-
 }

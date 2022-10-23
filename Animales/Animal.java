@@ -45,4 +45,6 @@ public abstract class Animal implements IAnimal{
     public String getHabitat() {
         return habitat;
     }
+
+    abstract void imprimirInfo();
 }

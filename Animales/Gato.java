@@ -4,7 +4,7 @@ public class Gato extends Felino {
     Gato() {
         setSonido("Maullido - meow");
         setHabitat("Doméstico");
-        setAlimentos("Carne - carnívoro");
+        setAlimentos("Carne, Ratones - carnívoro");
         setNombreCientifico("Felis silvestris catus");
     }
 
@@ -14,5 +14,4 @@ public class Gato extends Felino {
                 + "\nSu habitat es: " + getHabitat()
                 + "\nSu alimentación está basada en: " + getAlimentos());
     }
-
 }

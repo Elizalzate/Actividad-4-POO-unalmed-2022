@@ -1,3 +1,5 @@
+package Herencia;
+
 public class CuentaAhorros extends  Cuenta{
     private boolean isActiva;
     public CuentaAhorros(float saldo, float tasaAnual) {
@@ -23,10 +25,9 @@ public class CuentaAhorros extends  Cuenta{
             isActiva = false;
         }
     }
-
     protected void imprimir(){
         System.out.println("Tu saldo es: $" + saldo +
                 "\nComisión mensual: $" + comisionMensual +
-                "\nNúmero de transacciones: " + numeroConsignaciones+numeroRetiros);
+                "\nNúmero de transacciones: " + (numeroConsignaciones+numeroRetiros));
     }
 }

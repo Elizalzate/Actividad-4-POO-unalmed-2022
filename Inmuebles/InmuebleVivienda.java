@@ -1,8 +1,8 @@
 package Inmuebles;
 
-public class InmuebleVivienda extends Inmueble{
-    protected int numeroHabitaciones;
-    protected int numeroBanios;
+public abstract class InmuebleVivienda extends Inmueble {
+    private int numeroHabitaciones;
+    private int numeroBanios;
 
     InmuebleVivienda(int identificadorInmobiliario, float area, String direccion,
                      int numeroHabitaciones, int numeroBanios) {
@@ -11,7 +11,8 @@ public class InmuebleVivienda extends Inmueble{
         this.numeroBanios = numeroBanios;
     }
 
-    void imprimir(){
+    void imprimir() {
+        super.imprimir();
         System.out.println("Número de habitaciones: " + numeroHabitaciones +
                 "\nNúmero de baños: " + numeroBanios);
     }

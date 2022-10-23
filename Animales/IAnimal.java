@@ -1,12 +1,19 @@
 package Animales;
 
 interface IAnimal {
-    void setNombreCientifico(String nombre);
-    void setSonido(String sonido);
-    void setAlimentos(String alimento);
-    void setHabitat(String habitat);
     String getNombreCientifico();
+
+    void setNombreCientifico(String nombre);
+
     String getSonido();
+
+    void setSonido(String sonido);
+
     String getAlimentos();
+
+    void setAlimentos(String alimento);
+
     String getHabitat();
+
+    void setHabitat(String habitat);
 }

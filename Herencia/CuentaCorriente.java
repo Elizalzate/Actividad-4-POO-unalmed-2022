@@ -1,3 +1,5 @@
+package Herencia;
+
 public class CuentaCorriente extends Cuenta{
     float sobregiro = 0;
 
@@ -30,6 +32,7 @@ public class CuentaCorriente extends Cuenta{
         if(transaccion < 0 ){
             sobregiro -= transaccion;
             saldo = 0;
+            numeroRetiros += 1;
         }
         else{
             super.retirar(retiro);

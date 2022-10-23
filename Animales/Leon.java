@@ -1,6 +1,6 @@
 package Animales;
 
-public class Leon extends Felino{
+public class Leon extends Felino {
 
     Leon() {
         setSonido("Rugido - grrr");
@@ -8,11 +8,12 @@ public class Leon extends Felino{
         setAlimentos("Carne - carnívoro");
         setNombreCientifico("Panthera leo");
     }
-    void imprimirInfo(){
+
+    void imprimirInfo() {
         System.out.println("\n" + getNombreCientifico() +
                 " también conocido como León" +
-                "\nSonido: " + getSonido()+
+                "\nSonido: " + getSonido() +
                 "\nSu habitat es: " + getHabitat() +
-                "\nSu alimentación está basada en: " + getAlimentos() );
+                "\nSu alimentación está basada en: " + getAlimentos());
     }
 }

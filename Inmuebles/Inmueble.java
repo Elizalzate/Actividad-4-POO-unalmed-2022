@@ -1,23 +1,23 @@
 package Inmuebles;
 
-public class Inmueble {
-    protected  int identificadorInmobiliario;
-    protected  float area;
-    protected  String direccion;
-    protected  double precioVenta;
+public abstract class Inmueble {
+    private int identificadorInmobiliario;
+    private float area;
+    private String direccion;
+    private double precioVenta;
 
-    Inmueble(int identificadorInmobiliario, float area, String direccion){
+    Inmueble(int identificadorInmobiliario, float area, String direccion) {
         this.identificadorInmobiliario = identificadorInmobiliario;
         this.direccion = direccion;
         this.area = area;
     }
 
-    protected double calcularPrecioVenta(double valorArea){
+    protected double calcularPrecioVenta(double valorArea) {
         precioVenta = area * valorArea;
-        return  precioVenta;
+        return precioVenta;
     }
 
-    void imprimir(){
+    void imprimir() {
         System.out.println("Identificador inmobiliario: " + identificadorInmobiliario +
                 "\nÁrea del inmueble: " + area + "\nDirección: " + direccion +
                 "\nPrecio de venta: $" + precioVenta);

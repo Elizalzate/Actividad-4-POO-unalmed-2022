@@ -1,6 +1,6 @@
 package Inmuebles;
 
-public class Casa extends InmuebleVivienda{
+public class Casa extends InmuebleVivienda {
     protected int numeroPisos;
 
     Casa(int identificadorInmobiliario, float area, String direccion,
@@ -9,7 +9,8 @@ public class Casa extends InmuebleVivienda{
         this.numeroPisos = numeroPisos;
     }
 
-    void imprimir(){
+    void imprimir() {
+        super.imprimir();
         System.out.println("Número de pisos: " + numeroPisos);
     }
 }

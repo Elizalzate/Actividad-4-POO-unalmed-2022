@@ -8,10 +8,7 @@ public class Prueba {
         animales[2] = new Lobo();
         animales[3] = new Leon();
         for (Animal animale : animales) {
-            System.out.println(animale.getNombreCientifico() +
-                    "\nSonido: " + animale.getSonido()+
-                    "\nSu habitat es: " + animale.getHabitat() +
-                    "\nSu alimentación está basada en: " + animale.getAlimentos());
+            animale.imprimirInfo();
             System.out.println();
         }
     }
