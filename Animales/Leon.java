@@ -11,7 +11,7 @@ public class Leon extends Felino {
 
     void imprimirInfo() {
         System.out.println("\n" + getNombreCientifico() +
-                " también conocido como Leónsito" +
+                " también conocido como Leónsitooo" +
                 "\nSonido: " + getSonido() +
                 "\nSu habitat es: " + getHabitat() +
                 "\nSu alimentación está basada en: " + getAlimentos());
