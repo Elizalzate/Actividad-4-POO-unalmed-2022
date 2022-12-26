@@ -10,7 +10,7 @@ public class Perro extends Canido {
 
     void imprimirInfo() {
         System.out.println("\n" + getNombreCientifico() +
-                " también conocido como Perro" +
+                " también conocido como Perro o  can" +
                 "\nSonido: " + getSonido() +
                 "\nSu habitat es: " + getHabitat() +
                 "\nSu alimentación está basada en: " + getAlimentos());
